@@ -1,0 +1,617 @@
+
+@import url('https://fonts.cdnfonts.com/css/post-no-bills-jaffna');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    background-color: black;
+    color: #FFFFFF;    
+}
+.wrapper {
+    overflow: hidden;
+    height: 100%;
+}
+/*_____________________MODIFICATION________________________*/
+.container {
+    margin: 0 auto;
+    max-width: 1110px;
+    padding: 0 15px;
+}
+.title{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    &::after{
+        content: "";
+        width: 120px;
+        height: 1px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -60px;
+    }
+}
+.title-bold{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    &::after{
+        content: "";
+        width: 120px;
+        height: 1px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -60px;
+    }
+}
+.text{        
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+.button{
+    box-sizing: border-box;
+    padding: 11px 27px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+}
+.ibg{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    img{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    }
+}
+.watch {
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    &__card{
+        margin: 0 25px 40px;
+    }
+    &__img{
+        background-color: #191B1C;
+        width: 260px;
+        height: 325px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    &__text{
+        div{
+            &:nth-child(1){
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+            &:nth-child(2){
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 21px;
+            }
+        } 
+    }
+    a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+/*_______________________TOP-LINE__________________________*/
+.header{
+    width: 100%;
+    background-color: black;
+}
+.top-line {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    height: 44px;
+    margin: 0 auto;
+    background-color: black;
+	&__row {
+        position: relative;
+        z-index: 5;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        height: 44px;
+        align-items: center;
+        width: 100%;
+    }
+	&__info {
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        display: flex;
+        text-decoration: none;
+    }
+	&__text {
+        line-height: 20px;
+        font-size: 12px;
+        color: gray;
+    }
+	&__icon-phone { 
+        margin-right: 16.31px ; 
+        display: flex;
+        align-items: center;
+    }
+    &__icon-input{
+       padding: 0 7px 0 0;
+       margin:0 14.33px 0 0;
+       display: flex;
+       align-items: center;
+    }
+}
+/*_______________________MENU-LINE_________________________*/
+.menu-line {
+    padding: 0 0 0 11px;
+    position: relative;
+    background-color: #0F0F0F;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+	&__body {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+	&__logo {
+        padding-top: 6px;
+        font-family: 'Post No Bills Jaffna', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        position: relative;
+        z-index: 3;
+    }
+	&__burger {
+        display: none;
+    }
+	&__list {
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }        
+    &__link {
+        display: block;
+        line-height: 80px;
+        text-decoration: none;
+        font-size: 14px;
+        color:  #969696;
+        text-transform: uppercase;
+        &:hover{
+            background-color: #1F1F1F;
+            color: #FFFFFF;
+            }
+    }
+    .container {
+        padding: 0;
+        max-width: 1132px;
+    }
+    &__likes {
+        padding: 0 18px 0 20px;
+    }
+    &__cabinet {
+        padding: 0 17px;
+    }
+    &__setting {
+        padding: 0 16px 0 12px ;
+    }
+    &__basket {
+        padding: 0 22px 0 17.83px;
+    }
+    &__search {
+        padding: 0 22px ;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0F0F0F;
+        z-index: 2;
+    }
+}
+.container {
+
+     margin: 0 auto;
+
+}
+
+
+/*______________________PORTEN_LOGO_________________________*/
+ .porten-logo{
+    margin: 0 auto 0;
+    height: 810px;
+    max-width: 1920px;
+    background: url(../img/Rectangle_3.jpg) center/cover no-repeat ;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__logo{
+        margin: 160px auto 80px;
+        width: 320px;
+        height: 320px;
+        border: 4px solid #FFFFFF;
+        box-sizing: border-box;
+    }
+    &__porten{
+        margin: 89px 0 0;
+        font-family: 'Post No Bills Jaffna', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 96px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        &::after{
+            content: "";
+            width: 179px;
+            height: 2px;
+            background-color: #FFFFFF;
+            position: absolute;
+            bottom: 14px;
+            left: 50%;
+            margin-left: -89.5px;
+        }
+    }
+    &__text-logo{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__text{
+        padding: 0 5px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 150%;
+        max-width: 730px;
+        height: 96px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+}
+/*______________________SEASON2021-22_______________________*/
+.season2021-22 {
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 730px;
+    &__row {
+        display: flex;
+    }
+    &__column1 {
+        flex: 1 1 auto;
+    }
+    &__column2{
+        height: 730px;
+        flex: 1 1 45.833%;
+         background: url(../img/Rectangle_8.jpg)center/cover no-repeat ;
+    }
+    &__title {
+        margin: 93px auto 50px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+    &__title2 {
+        line-height: 39px;
+        padding-bottom: 30px;
+        margin: 484px auto 30px;
+        position: relative;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+}
+/*______________________COLLECTION2018______________________*/
+.collection2018 {
+    height: 600px;
+    &__row {
+        max-width: 1920px;
+        margin: 0 auto;
+        display: flex;
+    }
+    &__column1 {
+        height: 600px;
+        flex: 1 0 48.75%;
+    }
+    &__column2{
+        flex: 1 0 51.25%;
+    }
+    &__title {
+        margin: 100px 0 40px;
+        padding-bottom: 40px;
+        position: relative;
+    }
+    &__text {
+        padding: 0 10px;
+        height: 172px;
+        text-align: center;
+        max-width: 628px;
+        margin: 0 auto 64px;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 98px;
+    }
+}
+/*_____________________WATCH-BLOCK__________________________*/
+.watch-block {
+    height: 1289px;
+    &__title {
+        margin: 0 0 81.5px;
+        position: relative;
+        padding:120px 0 40.5px;
+    }
+    &__watch {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item{
+        margin: 0 11.5px 40px;
+    }
+    &__card{
+        position: relative;
+    }        
+    &__last-watch {
+       background:  url(../img/watch/watch_3.png)center no-repeat #191B1C;
+           filter:  blur(2px);
+           background-color: #191B1C;
+           width: 260px;
+           height: 325px;
+           display: flex;
+           justify-content: center;
+           align-items: center;           
+    }
+    &__last-watch-bg{
+        width: 100%;
+        height: 100%;
+        background-color:  rgba(25, 27, 28, 0.5);
+    }
+    &__link{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -98.72px;
+        margin-top: -24.5px;
+    }
+    .watch {
+        margin: 0 -11.5px;
+        &__img{            
+        }
+        &__card{
+            position: relative;
+            margin: 0 11.5px 40px;
+        }
+    }
+}
+/*______________________ARTICLES____________________________*/
+.articles {
+    background-color: #0F0F0F;
+    height: 1582px;
+    &__title {
+        padding: 63.32px 0 36.56px;
+        margin-bottom: 56.97px;
+        line-height: 48.16px;
+        position: relative;
+    }
+    &__content {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    &__item { 
+        display: flex;
+        margin-bottom: 35px;
+        &:first-child{
+            margin-bottom:30px;
+        }
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+    &__img {
+        flex: 0 1 51.56%;
+        height: 437px;
+    }
+    &__body {
+        flex: 1 1 48.44%;
+        margin:0 50px 0 145px;
+        max-width: 628px;
+    }
+    &__lable {
+        margin: 53px 0 14px;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    &__text {
+       margin-bottom: 51px;
+    }
+    &__button-tag {
+        height: 47px;
+        position: relative;
+    }
+    &__hashtag {
+        position: absolute;
+        top: 12px;
+        right: 0;
+        line-height: 23px;
+        max-width: 50%;
+        text-align: right;
+        &:last-child{
+            max-width: 70%;
+        }
+    }
+}
+/*_______________________PARTNERS___________________________*/
+.partners {
+    background-color: #0F0F0F;
+    height: 541px;
+    &__title {
+        padding: 92px 0 44px;
+    }
+    &__container{
+           height: 357px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+    }
+    &__row {
+        display: flex;
+    }
+    &__image {
+        padding: 0 15px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__coco {
+        transform: translateY(-10px);
+    }
+    &__rolex {
+        transform: translateY(-20px);
+    }
+    &__berguet {
+        transform: translateY(-19.5px);
+    }
+    &__haven {
+        transform: translateY(-11px);
+    }
+}
+/*_____________________ABOUT-COMPANY________________________*/
+.about-company {
+    background-color: #0F0F0F;
+    height: 450px;
+    background: url(../img/Rectangle_15.png)center/cover no-repeat;
+	&__row {
+        display: flex;
+    }
+	&__column {
+        max-width: 350px;
+        flex-basis: 33.333%;
+        &:nth-child(2){
+            padding: 0 30px;
+        }
+    }
+	&__title {
+        margin:80px 0 40px;
+        font-family: 'Playfair Display';
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+	&__text {
+        margin-bottom: 26px;
+    }
+    &__text2{
+        max-width: 351px;
+    }
+	&__link {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 14px;
+        line-height: 21px;
+        color: #D0D0D0;
+        background-color: #0F0F0F;
+        text-decoration: none;
+        margin: 0 0 20px 1px;
+    }
+    &__textarea{
+        padding-right: 15px;
+        position: relative;
+    }
+	&__input {
+        box-sizing: border-box;
+        width: 210px;
+        height: 42px;
+        background: rgba(255, 255, 255, 0.4);
+        margin: 0;
+        border: 0;
+        color: #D0D0D0;
+        &::placeholder{
+           font-size: 14px;
+           line-height: 150%;
+           color: #D0D0D0;
+           padding-left: 16px;
+        }
+    }
+	&__button {
+        line-height: 21px;
+        position: absolute;
+        right: 2;
+        bottom: 0;
+        margin: 0;
+    }
+}
+/*_____________________BOTTOM_LINE__________________________*/
+.footer {
+    background-color: #0F0F0F;
+    height: 50px;
+	&__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+	&__porten {
+        max-width: 65%;
+        font-size: 12px;
+    }
+	&__link {
+        line-height: 50px;
+        font-size: 12px;
+        color: #D0D0D0;
+    }
+}
+

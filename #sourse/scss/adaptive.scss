@@ -1,0 +1,491 @@
+
+/*_______________Large desktops and laptops____max-width_1200px_min-width: 1400px__*/
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .season2021-22 {
+        &__watch {
+            margin: 12.5px;
+        }
+        .watch {
+            margin: 0 12.5px;
+            &__card{
+                margin: 0 12.5px 40px;
+            }
+        }
+    }
+}
+/*____Landscape tablets and medium desktops____max-width_1199px__*/
+@media  (max-width: 1199px) {
+    .season2021-22 {
+        height: 1460px;
+        &__row{
+           flex-wrap: wrap;
+        }
+        &__column1{
+            width: 730px;
+        }
+    }
+    .watch {
+        flex-wrap: wrap;
+    }
+}
+/*_____________________max-width_1138px___*/
+@media (max-width: 1138px) {
+    .watch-block {
+        height: 1734px;
+    }
+    .about-company {
+        &__input{
+            width: 180px;
+        }    
+    }
+    .menu-line {
+        padding: 0 15px;
+        .container{
+            padding-right: 7.5px;
+        }
+    }
+}
+/*______ Portrait tablets and small desktops___max-width_991px__*/
+@media  (max-width: 991px) {
+    .collection2018 {
+        height: 1200px;
+        &__row {
+            flex-wrap: wrap;
+        }
+        &__column1 {
+            min-width: 500px;
+            height: 600px;
+            flex: 1 1 50%;
+        }
+        &__column2{
+            order: -1;
+            flex: 1 1 50%;
+        }
+    }
+    .articles {
+        height: 2953px;
+        &__body{
+            padding: 0 15px;
+            margin: 0;
+        }
+        &__item { 
+            height: 874px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .about-company {
+        height: 1210px;
+        &__row {
+           flex-direction: column;
+           align-items: center;
+        }
+        &__column {
+            flex-basis: auto;
+            margin: 0 auto;
+            &:nth-child(3){
+                padding-right: 0;
+            }
+            &:nth-child(2){
+                padding: 0;
+            }
+        }
+        &__input{
+            width: 210px;
+        } 
+    }
+    .partners {
+        height: 1241px;
+        &__container{
+               height: 857px;
+               display: flex;
+               align-items: flex-end;
+               padding: 100px 0;
+        }
+        &__row {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;    
+        }
+        &__image {    
+            padding: 0 15px;
+            img{
+                max-width: 100%;
+            }
+        }
+        &__coco {
+            transform: translateY(-10px);
+            max-width: 100%;
+        }
+        &__rolex {
+            transform: translateY(-20px);
+            max-width: 100%;
+        }
+        &__berguet {
+            transform: translateY(-19.5px);
+            max-width: 100%;
+        }
+        &__haven {
+            transform: translateY(-11px);
+            max-width: 100%;
+        }
+    }
+}
+/*_____________________max-width_979px___*/
+@media (max-width: 979px){
+    .season2021-22 {
+        height: 1905px;
+    }
+}
+/*_____________________max-width_930px___*/
+@media (max-width: 930px){
+    .collection2018 {
+        &__img {
+            img{
+                width: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+/*_____________________max-width_855px___*/
+@media (max-width: 855px) {
+    .watch-block {
+        height: 2179px;
+    }
+}
+/*_____Landscape phones and portrait tablets____max-width_767px__*/
+@media (max-width: 767px) {
+    .header{
+        position: relative;
+        z-index: 5;
+    }
+    .menu-line {
+        &__burger {
+            top: 29.5px;
+            right: 25px;
+            position: absolute;
+            z-index: 3;
+            display: block;
+            width: 24px;
+            height: 21px;
+            &::before, &::after{
+                content: "";
+                border-radius: 5px;
+                position: absolute;
+                background-color: #FFFFFF;
+                width: 100%;
+                height: 3px;
+                left: 0;
+            }
+            &::before{
+                top: 0;
+                transition: all 0.3s ease 0s;
+            }
+            &::after{
+               bottom: 0;
+               transition: all 0.3s ease 0s;
+            }
+            span{
+                border-radius: 5px;
+                position: absolute;
+                background-color: #FFFFFF;
+                width: 100%;
+                height: 3px;
+                left: 0;
+                top: 9px;
+                transition: all 0.3s ease 0s;
+            }
+        }
+        &__menu{
+            position: fixed;
+            top: -200%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            transition: all 0.3s ease 0s;
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            padding: 80px 0 ;
+            &.active {
+                top: 0px;
+            }
+        }
+        &__list{
+            z-index: 1;
+            padding: 0 0 80px;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+                &__link {
+            display: block;
+            line-height: 80px;
+            text-decoration: none;
+            font-size: 14px;
+            color:  #969696;
+            text-transform: uppercase;
+            &:hover{
+                background-color: #1F1F1F;
+                color: #FFFFFF;
+            }
+        }
+        .active{
+            &::before{
+                transform: rotate(45deg);
+                top: 9px;
+                }
+            &::after{
+                transform: rotate(-45deg);
+                bottom: 9px;
+                }
+            }
+        .active span {
+            opacity: 0;
+        }
+    }
+    .lock{
+        overflow: hidden;
+        .header{
+            position: fixed;
+            z-index: 5;
+        }
+        @media (max-height: 600px){
+            .top-line{
+                display: none;
+            }
+        }        
+        @media (max-height: 500px){
+            .menu-line {
+                &__logo{
+                    z-index: -1;
+                }
+                &:before{
+                    z-index: -1;
+                }
+            }
+        }
+    }
+    .porten-logo{
+        &__text{
+            max-width: 100%;
+        }
+    }
+    .about-company {
+        &__row {
+           flex-direction: column;
+        }
+        &__column {
+           max-width: 350px;
+           margin: 0 auto;
+        }
+    }
+    .phone-active{
+        .top-line{
+            &__phone-text{
+                 left: 56.3px;
+            }
+            &__icon-phone{
+                position: relative;            
+                .pointer{
+                    margin: 0;
+                    span{
+                        &:first-child{
+                            transform: translateY(-2px) rotate(-45deg);
+                        }
+                        &:last-child{
+                        transform: translateY(2px) rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*_____________________max-width_669px___*/
+@media (max-width: 669px){
+    .season2021-22 {
+        height: 2350px;
+    }
+    .articles {
+        &__body{
+             width: 90%;
+        }
+    }
+}
+/*_____________________max-width_619px___*/
+@media (max-width: 619px){
+    .collection2018{
+        height: 1300px;
+        &__column2{
+            height: 700px;
+        }
+        &__text {
+            margin: 0 auto 164px;
+        }
+    }
+} 
+/*_____________________max-width_572px___*/
+@media (max-width: 572px) {
+    .watch-block {
+        height: 3959px;
+    }
+}
+/*_____________________max-width_550px___*/
+@media (max-width: 550px){
+    .top-line{
+        &__input{
+            transition: all 0.3s ease 0s;
+            position: relative;
+        }
+        &__phone-text{
+            z-index: -1;
+            background-color: black;
+            position: absolute;
+            left: -200%;
+            top: 50%;
+            margin-top: -10px;
+            transition: all 0.3s ease 0s;
+        }
+        &__icon-phone{
+            padding: 0 0 0 15px;
+            background-color: black;
+            .pointer{
+                padding: 8px;
+                span{
+                    transition: all 0.5s ease 0s;
+                    width: 8px;
+                    height: 1px;
+                    background-color: #FFFFFF;
+                    display: block;
+                    &:first-child{
+                        transform: translateY(-2px) rotate(45deg);
+                    }
+                    &:last-child{
+                        transform: translateY(2px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+        .container{
+            padding: 0 15px 0 0;
+        }
+    }
+    .phone-active{
+        .top-line{
+            &__input{
+                transform: translateX(300px);
+
+            }
+        }
+    }
+}
+/*_______________Portrait phones and smaller____max-width_480px__*/
+@media (max-width: 480px) {
+    .season2021-22 {
+        &__row{
+            margin: 0;
+        }
+           &__item {
+            padding:  0 0 40px;
+        }
+    }
+    .watch {
+        margin: 0;
+    }
+}
+@media (max-width: 450px){
+        .partners {
+        &__row {
+            width: 100%; 
+            &__image{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+/*_____________________max-width_400px___*/
+@media (max-width: 400px){
+    .collection2018{
+        height: 1400px;
+        &__column2{
+            height: 800px;
+        }
+        &__text {
+            margin: 0 auto 264px;
+        }
+    }
+    .articles{
+        &__hashtag{
+            width: 100px;
+            &:last-child{
+                width: 150px;
+            }
+        }
+    }
+    .phone-active{
+        .container{
+            padding: 0;
+        }
+        .top-line{
+            &__container{
+                    padding: 0;
+            }
+            &__icon-phone{
+                padding: 0;
+
+            }
+            .pointer{
+                margin: 0;
+                padding: 12px;
+            }
+            &__phone-text{
+                left: 31.3px;
+            }
+        }
+    }
+    .phone-active{
+        .top-line{
+            &__icon-phone{   
+                img{
+                    display: none;
+                }       
+                .pointer{
+                    padding: 8px 8px 8px 16px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+/*_____________________max-width_361px___*/
+@media (max-width: 361px){
+    .top-line{
+        &__phone-text{
+            top: 30%;
+        }
+    }
+    .about-company {
+        &__column{
+            max-width: 100%;
+        }
+        &__input{
+            width: 165px;
+        }
+    }
+    .articles{
+        height: 3053px;
+    }
+
+}
